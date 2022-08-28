@@ -1,4 +1,5 @@
 import { USERS_REQUEST_URL } from '@/const';
+import { usersStore } from '@/store/users';
 
 export async function load({ fetch }) {
 	let users = [];
@@ -9,6 +10,8 @@ export async function load({ fetch }) {
 		console.log(e);
 	}
 
+	usersStore.set(users)
+	
 	return {
 		users
 	};

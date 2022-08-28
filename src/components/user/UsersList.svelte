@@ -1,5 +1,5 @@
 <script>
-	import UserItem from '../components/UserItem.svelte';
+	import UserItem from '@/components/user/UserItem.svelte';
 	export let users;
 </script>
 

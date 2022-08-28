@@ -1,5 +1,5 @@
 <script>
-	import UsersList from '../../pages/UsersList.svelte';
+	import UsersList from '@/components/user/UsersList.svelte';
 
 	export let data;
 </script>

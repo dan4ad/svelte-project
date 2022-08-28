@@ -2,10 +2,9 @@
 	import '@/assets/app.scss';
 	import { afterNavigate } from '$app/navigation';
 
-	$: routes = [
+	let routes = [
 		{ id: 0, name: 'Main', path: '/', active: false },
-		{ id: 1, name: 'Users', path: '/users', active: false },
-		{ id: 2, name: 'User Profile', path: '/profile', active: false }
+		{ id: 1, name: 'Users', path: '/users', active: false }
 	];
 
 	afterNavigate(({ to }) => {
@@ -35,6 +34,9 @@
 <style style="scss">
 	.nav-bar {
 		display: flex;
+		position: fixed;
+		left: 0;
+		right: 0;
 		justify-content: center;
 		background-color: #7fc7ff;
 		padding: 32px 80px;
@@ -56,7 +58,7 @@
 		color: #42ab44;
 	}
 	.main-container {
-		padding: 40px 80px;
+		padding: 122px 80px 80px;
 	}
 	.active-path {
 		color: #42ab44;
